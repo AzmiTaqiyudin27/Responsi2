@@ -4,7 +4,7 @@ $input = file_get_contents('php://input');
 $data = json_decode($input,true);
 $pesan = [];
 $username = trim($data['username']);
-$password = md5(trim($data['password']));
+$password = trim($data['password']);
 $query = mysqli_query($koneksi,"select * from user where username='$username' and password='$password'");
 $jumlah = mysqli_num_rows($query);
 

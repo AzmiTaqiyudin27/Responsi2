@@ -5,7 +5,7 @@ $data = json_decode($input,true);
 $pesan = [];
 
 $id = $_GET['id'];
-$query = mysqli_query($koneksi,"DELETE FROM projek WHERE id='$id'");
+$query = mysqli_query($koneksi,"DELETE FROM keseharianku WHERE id='$id'");
 
 if ($query) { 
     http_response_code(201);

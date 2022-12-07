@@ -15,7 +15,7 @@ if ($id != '' and
     $waktu != ''  and 
     $aktivitas != '' ) {
         
-    $query = mysqli_query($koneksi, "UPDATE projek at SET tanggal='$tanggal',waktu='$waktu', aktivitas='$aktivitas' WHERE id='$id'");
+    $query = mysqli_query($koneksi, "UPDATE keseharianku at SET tanggal='$tanggal',waktu='$waktu', aktivitas='$aktivitas' WHERE id='$id'");
     $pesan['status'] = 'berhasil';
 } else {
     $pesan['status'] = 'gagal';

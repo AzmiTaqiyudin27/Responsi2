@@ -3,7 +3,7 @@ require 'koneksi.php';
 $data = [];
 $id = $_GET['id'];
 
-$query = mysqli_query($koneksi,"select * from projek where id ='$id'");
+$query = mysqli_query($koneksi,"select * from keseharianku where id ='$id'");
 $jumlah = mysqli_num_rows($query); 
 
 if ($jumlah == 1) {

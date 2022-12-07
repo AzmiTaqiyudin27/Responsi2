@@ -9,12 +9,12 @@ $waktu = trim($data['waktu']);
 $aktivitas = trim($data['aktivitas']);
 
 //jika nama matakuliah dan keterangan tidak kosong 
-if ($id != '' and
+if (
     $tanggal != '' and 
     $waktu != ''  and 
     $aktivitas != '' )  {
         
-    $query = mysqli_query($koneksi, "INSERT INTO obat(tanggal, waktu, aktivitas, ) 
+    $query = mysqli_query($koneksi, "INSERT INTO keseharianku(tanggal, waktu, aktivitas) 
     values('$tanggal', '$waktu', '$aktivitas')");
     
     $pesan['status'] = 'berhasil';

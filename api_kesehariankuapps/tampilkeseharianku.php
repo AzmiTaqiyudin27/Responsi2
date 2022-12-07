@@ -1,7 +1,7 @@
 <?php  
 require 'koneksi.php'; 
 $data = []; $urutan_list = 1; 
-$query = mysqli_query($koneksi,'select * from projek'); 
+$query = mysqli_query($koneksi,'select * from keseharianku'); 
 while ($row = mysqli_fetch_object($query)) {     
     $row->urutan_list = $urutan_list++;     
     $data[] = $row;  } 

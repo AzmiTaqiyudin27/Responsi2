@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 07 Des 2022 pada 01.26
+-- Waktu pembuatan: 07 Des 2022 pada 02.06
 -- Versi server: 10.4.25-MariaDB
 -- Versi PHP: 7.4.30
 
@@ -39,8 +39,9 @@ CREATE TABLE `keseharianku` (
 --
 
 INSERT INTO `keseharianku` (`id`, `tanggal`, `waktu`, `aktivitas`) VALUES
-(1, '2022-11-01', '00:00:00', 'jaya jaya jaya'),
-(3, '2022-01-01', '00:00:00', 'b');
+(1, '2022-11-01', '11:00:00', 'minum obat'),
+(4, '2023-01-01', '03:00:00', 'makan'),
+(5, '2023-03-02', '05:00:00', 'nonton yoasobi');
 
 -- --------------------------------------------------------
 
@@ -58,8 +59,7 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`username`, `password`) VALUES
-('admin', '21232f297a57a5a743894a0e4a801fc3'),
-('azmi', '14c1802d929f5404f8643ce489644d53');
+('azmi', 'azmi');
 
 --
 -- Indexes for dumped tables
@@ -85,7 +85,7 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT untuk tabel `keseharianku`
 --
 ALTER TABLE `keseharianku`
-  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
